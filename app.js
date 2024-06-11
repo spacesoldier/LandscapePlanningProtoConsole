@@ -17,6 +17,7 @@ app.use(stringReplace({
 app.use(express.static('.'))
 
 app.get('/', function(req, res) {
+    console.log("user request");
     res.render('index.html');
 });
 
