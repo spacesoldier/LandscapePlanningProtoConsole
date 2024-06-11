@@ -36,7 +36,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: ${{ env.CR_URI }}/landscape-planner-ui:${{ github.sha }}
+          tags: ${{ env.CR_URI }}/landscape-planner-ui:latest #${{ github.sha }}
           platforms: linux/amd64
           file: ./Dockerfile
           context: .
