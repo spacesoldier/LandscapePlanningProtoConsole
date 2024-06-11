@@ -5,9 +5,10 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "keycloak-connect": "22.0.0",
+    "cors": "^2.8.5",
     "express": "^4.17.3",
     "express-session": "^1.17.1",
-    "cors": "^2.8.5"
+    "keycloak-connect": "22.0.0",
+    "string-replace-middleware": "^1.1.0"
   }
 }
