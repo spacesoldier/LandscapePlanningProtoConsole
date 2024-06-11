@@ -7,6 +7,8 @@ var SERVICE_URL = process.env.SERVICE_URL || "http://localhost:3000/secured";
 
 console.log("Hello there!!!");
 console.log("KC_URL: "+ KC_URL);
+console.log("listen port:"+process.env.PORT);
+console.log("secured endpoint: "+SERVICE_URL);
 
 app.use(stringReplace({
    'SERVICE_URL': SERVICE_URL,
