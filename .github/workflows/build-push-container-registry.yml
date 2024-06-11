@@ -39,7 +39,7 @@ jobs:
           tags: ${{ env.CR_URI }}/landscape-planner-ui:${{ github.sha }}
           platforms: linux/amd64
           file: ./Dockerfile
-          context: ./
+          context: .
           
 #      - name: Python - Build and push docker image to Evolution Aritfact Registry
 #        uses: docker/build-push-action@v5
