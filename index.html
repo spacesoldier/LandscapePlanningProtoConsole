@@ -30,7 +30,7 @@
                     output(req.status + '\n\n' + req.responseText);
                 }
             }
-            req.open('GET', 'https://dev.simplizio.com/api/sauce', true);
+            req.open('GET', 'https://app.simplizio.com/api/sauce', true);
             req.setRequestHeader('Authorization', 'Bearer ' + kc.token);
             req.send();
         }
