@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Keycloak Example Application</title>
+    <title>Territory planning</title>
     <script type="text/javascript" src="https://auth.simplizio.com/js/keycloak.js"></script>
     <script type="text/javascript">
         function output(content) {
@@ -58,16 +58,22 @@
 </div>
 
 <div id="user" style="display: none">
-    <button onclick="window.kc.logout()">Logout</button>
-    <button onclick="output(kc.idTokenParsed)">Show ID Token</button>
-    <button onclick="output(kc.tokenParsed)">Show Access Token</button>
-    <button onclick="window.kc.updateToken(-1).then(function() { output(kc.idTokenParsed); profile() })">Refresh</button>
-    <button onclick="sendRequest()">Invoke Service</button>
-    <hr/>
-    <h2 id="name"></h2>
-    <img id="picture" width="50px" height="50px"/>
-    <hr/>
-    <pre id="output"></pre>
+    <div>
+        <h2>User console</h2>
+    </div>
+    <div>
+        <button onclick="window.kc.logout()">Logout</button>
+        <button onclick="output(kc.idTokenParsed)">Show ID Token</button>
+        <button onclick="output(kc.tokenParsed)">Show Access Token</button>
+        <button onclick="window.kc.updateToken(-1).then(function() { output(kc.idTokenParsed); profile() })">Refresh</button>
+        <button onclick="sendRequest()">Invoke Service</button>
+        <hr/>
+        <h2 id="name"></h2>
+        <img id="picture" width="50px" height="50px"/>
+        <hr/>
+        <pre id="output"></pre>
+    </div>
+
 </div>
 
 
