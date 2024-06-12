@@ -3,11 +3,11 @@ services:
   planner-ui:
     image: spacesoldier/planner-proto-ui
     environment:
-      - PORT=8080
+      - PORT=9090
       - KC_URL=https://auth.simplizio.com/
       - SERVICE_URL=https://dev.simplizio.com/api/
     ports:
-      - "8080:8080"
+      - "9090:9090"
 
 networks:
   default:
