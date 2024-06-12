@@ -1,3 +1,4 @@
+version: "3.7"
 services:
   planner-ui:
     image: spacesoldier/planner-proto-ui
