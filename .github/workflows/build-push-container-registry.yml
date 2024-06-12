@@ -30,7 +30,8 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: ${{ env.CR_URI }}/landscape-planner-ui:latest #${{ github.sha }}
+#          tags: ${{ env.CR_URI }}/landscape-planner-ui:latest #${{ github.sha }}
+          tags: silviosalgari/landscape-planner-ui:latest
 #          platforms: linux/amd64
 #          file: Dockerfile
 #          context: .
