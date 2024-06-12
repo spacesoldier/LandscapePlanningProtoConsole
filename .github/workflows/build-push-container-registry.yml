@@ -19,7 +19,7 @@ jobs:
         with:
           platforms: linux/amd64
 
-      - name: Log in to Evolution Artifact Registry
+      - name: Log in to Docker Hub
         uses: docker/login-action@v1
         with:
           #registry: ${{ env.CR_URI }}
@@ -31,7 +31,7 @@ jobs:
         with:
           push: true
 #          tags: ${{ env.CR_URI }}/landscape-planner-ui:latest #${{ github.sha }}
-          tags: silviosalgari/landscape-planner-ui:latest
+          tags: spacesoldier/planner-proto-ui:latest
 #          platforms: linux/amd64
 #          file: Dockerfile
 #          context: .
