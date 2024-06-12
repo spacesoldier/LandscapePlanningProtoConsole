@@ -1,0 +1,14 @@
+services:
+  planner-ui:
+    image: spacesoldier/planner-proto-ui
+    environment:
+      - PORT=8080
+      - KC_URL=https://auth.simplizio.com/
+      - SERVICE_URL=https://dev.simplizio.com/api/
+    ports:
+      - "8080:8080"
+
+networks:
+  default:
+    external:
+      name: leadersnet
