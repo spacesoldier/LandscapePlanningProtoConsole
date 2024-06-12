@@ -16,6 +16,8 @@ jobs:
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
+        with:
+          platforms: linux/amd64
 
       - name: Log in to Evolution Artifact Registry
         uses: docker/login-action@v1
@@ -28,7 +30,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: ${{ env.CR_URI }}/landscape-planner-ui:latest #${{ github.sha }}
+          tags: ${{ env.CR_URI }}/landscape-planner-ui${{ github.sha }}
           platforms: linux/amd64
 #          file: Dockerfile
 #          context: .
